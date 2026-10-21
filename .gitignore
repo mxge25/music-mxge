@@ -1,0 +1,10 @@
+*.apk
+*.aab
+*.jks
+*.keystore
+.env
+.env.*
+key.properties
+release-credentials.properties
+__pycache__/
+*.pyc
