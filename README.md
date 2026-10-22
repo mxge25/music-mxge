@@ -13,7 +13,3 @@ Android 8+; ARM64 and ARMv7. Player source remains PRIVATE. This public Git tree
 The companion requires internet, remains visible during downloads, and currently supports only 4 KiB-page devices. MXGE Player remains entirely offline. See the release notes and companion SOURCES.md for compatibility and native producing-build provenance limits.
 
 Download signed APKs and SHA256SUMS.txt from Releases. GitHub Pages enables each app's buttons only after its exact published assets verify; companion downloads also require its source ZIP. Existing older release assets remain available. Website fonts are locally hosted under OFL; no external scripts or tracking.
-
-Current signed beta: https://github.com/mxge25/music-mxge/releases/tag/v1.0.0-beta.1-build.6
-
-Player build 6 and Links 0.2.0 are now published with four signed ABI APKs, companion-only source and SHA256SUMS.txt. Published asset digests match the local signed artifacts. Hardware validation remains pending.

@@ -1,6 +1,6 @@
 'use strict';
-const release = { published: false, tag: 'v1.0.0-beta.1-build.6' };
-const companionRelease = { published: false, tag: 'v1.0.0-beta.1-build.6' };
+const release = { published: false, tag: 'v1.0.0-beta.1-build.7' };
+const companionRelease = { published: false, tag: 'v1.0.0-beta.1-build.7' };
 let language = 'ar';
 let toastTimer;
 const languageButton = document.querySelector('#language');

@@ -2,22 +2,22 @@
   "app": "MXGE Player",
   "applicationId": "io.github.mxge25.player",
   "versionName": "1.0.0-beta.1",
-  "baseVersionCode": 6,
-  "releaseTag": "v1.0.0-beta.1-build.6",
+  "baseVersionCode": 7,
+  "releaseTag": "v1.0.0-beta.1-build.7",
   "minSdk": 26,
   "artifacts": [
     {
       "abi": "arm64-v8a",
-      "beforeBytes": 179556620,
+      "beforeBytes": 179556896,
       "afterBytes": 22595303,
-      "sha256": "6974d1ad302128a0e557a42ca956574c38366949df752510a8751e00ef8df84b",
+      "sha256": "ea847cd1947ad94617a73edaf2f6cfff645fb7b7e1f84975b90357cb48decb56",
       "file": "MXGE-Player-1.0.0-beta.1-arm64-v8a.apk"
     },
     {
       "abi": "armeabi-v7a",
-      "beforeBytes": 165818518,
-      "afterBytes": 19298029,
-      "sha256": "ec4c4a85ce57b082b4252b0101482579c18fba66a954ff3f4b90278dc383d74d",
+      "beforeBytes": 165818794,
+      "afterBytes": 19302125,
+      "sha256": "5a121cbb6afae834103a4f677f0f95a49b56d289ace975463a7e86f99b69677c",
       "file": "MXGE-Player-1.0.0-beta.1-armeabi-v7a.apk"
     }
   ],

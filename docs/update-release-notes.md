@@ -1,31 +1,19 @@
-# MXGE Player beta.1 · build 6 + MXGE Links 0.2.0
+# MXGE Player build 7 + MXGE Links 0.3.0
 
 Not yet verified on physical devices. The cutter is experimental.
 
-## MXGE Player — مشغل الصوت
-
-- أيقونة أصلية جديدة تتكيف مع شكل أيقونات الهاتف.
-- إصلاح حذف أيقونات التشغيل من إشعار نسخة التثبيت.
-- وصول واضح للتبطئة والتسريع والقص وتعديل بيانات الأغنية داخل المكتبة.
-- تطبيق الثيمات الثلاثة على الواجهة: داكن، AMOLED، ولون مخصص.
-- يعمل دون إنترنت أو إعلانات أو حسابات. التطبيق المساعد منفصل.
-
-Android 8.0+; ARM64 primary and ARMv7 alternative. Same applicationId and release certificate as the previous signed beta, base version code **6**. Install as an update; avoid uninstalling if you want to retain local data. Export a local backup first. Song labels are stored inside MXGE; embedded tags in original files are unchanged. The home widget remains unimplemented.
-
-Final Flutter analysis is clean and all **61 existing-suite tests** passed. No phone validation of notifications, native audio, cutter output/memory or performance is claimed.
-
-## MXGE Links — مساعد الروابط التجريبي
-
 Experimental companion. Downloads from supported public links are not yet verified on physical devices.
 
-- تطبيق مستقل بأيقونة مختلفة، للصوت M4A أو الفيديو MP4 حتى 720p عند توفر الصيغة المتوافقة.
-- لصق رابط أو استقبال المشاركة من يوتيوب وإنستجرام وتيك توك وفيسبوك.
-- حفظ الملف في مكان تختاره؛ الصوت يُفتح في MXGE والفيديو في مشغل الفيديو على الهاتف.
-- اترك التطبيق ظاهرًا أثناء التحميل. الروابط الخاصة أو المحمية أو التي تحتاج تسجيل دخول قد لا تعمل.
-- يحتاج الإنترنت؛ MXGE Player نفسه لا يطلب إذن إنترنت. أذونات المساعد: INTERNET فقط.
+تحديث الواجهة: الثيم الكحلي والموف المعتمد، أيقونات أصلية دائرية، وإعدادات في خمس مجموعات. قائمة الثلاث شرط داخل المشغّل تضم السرعة والإبطاء والصوت، القص، تعديل بيانات الأغنية، التشغيل من البداية، سجل المواضع، مؤقت النوم، تكرار A–B، الكلمات والفصول والعلامات. تبقى حالة المؤقت/التكرار الفعالة ظاهرة في المشغّل. تعديل البيانات محلي داخل MXGE ولا يغيّر وسوم الملف الأصلي.
 
-Independent applicationId `io.github.mxge25.linkaudio`, version 0.2.0-experimental / code 2. Both ARM APKs compile and pass release lint/signature/manifest/alignment checks. No platform download, audible extraction, video playback, save or cancellation result is claimed device-tested. Devices with 16 KiB memory pages are rejected before loading this experimental runtime because upstream's nested codec binaries have known compatibility limits; Android 8+ alone is not a guarantee for every device.
+MXGE Links 0.3.0: ابدأ بملف **universal.apk** الذي يضم ARM64 وARMv7 (99,951,146 bytes؛ أقل من 100 MB). نسخ أصغر متاحة بمعمارية محددة. لم يُحسم سبب رسالة App not installed على الهاتف؛ النسخة الشاملة تزيل اختيار المعمارية الخاطئة كسبب محتمل، ولا تُعتبر إثباتًا لنجاح التثبيت على كل جهاز. انتظر اكتمال تنزيل APK وافتحه من التنزيلات مع مساحة كافية لفك المحرك. ملف المصدر ZIP للمطورين.
 
-The companion integration source, Gradle wrapper, lockfile, GPL text and upstream source directions are supplied in the companion-source ZIP. The player source remains PRIVATE and is not in that archive. The upstream runtime is pinned to youtubedl-android 0.18.1; its prebuilt producing-build provenance remains unresolved upstream. The source directions distinguish verified wrapper/tag identity from unverified native producing recipes; no reproducible-native-build claim is made.
+Android 8+; Player base version code 7 (ARM64 2007 / ARMv7 1007), companion version code 3. Same application IDs and release certificate: install as updates while retaining local data. Player remains entirely offline with no INTERNET permission. Only the independent companion uses internet.
 
-Compare downloaded APKs with SHA256SUMS.txt. Old release assets remain available under the earlier tag.
+Companion supports selecting M4A audio or compatible MP4/H.264 video up to 720p from supported public YouTube, Instagram, TikTok and Facebook links. Keep its screen visible during downloading. Private, login-only, protected or changed services may fail. Current prebuilt runtime supports 4 KiB memory-page devices only; 16 KiB devices are rejected before native startup.
+
+Validation: clean Flutter analysis; the existing suite was run, then all seven affected layout scenarios passed after fixes, with the other 54 tests already passing. Arabic/English, 360dp portrait, landscape and 2× text were checked with widget fixtures. Signed APK identities, Android permissions, notification icon resources and ZIP alignment verified. Companion APK payloads remain byte-for-byte unchanged through lossless recompression; no runtime shrinking. Each of the five signed APKs is strictly below 100,000,000 bytes. No connected physical phone was available: installation, platform downloads, audio/Bluetooth, notifications, cutter accuracy/memory and performance still require device tests.
+
+The companion-only GPL application-source ZIP includes its original Kotlin/UI/build source, lockfile, Gradle wrapper, packaging scripts, license notices and upstream source directions. Player source stays PRIVATE and is excluded. Exact producing-build provenance for the pinned third-party prebuilt native runtime remains unresolved upstream; the archive is not claimed to reconstruct every native producing build. See its SOURCES.md before broader redistribution.
+
+Compare downloads against SHA256SUMS.txt. Older releases are retained.
