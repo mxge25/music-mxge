@@ -1,0 +1,34 @@
+{
+  "app": "MXGE Links",
+  "applicationId": "io.github.mxge25.linkaudio",
+  "versionName": "0.2.0-experimental",
+  "releaseTag": "v1.0.0-beta.1-build.6",
+  "minSdk": 26,
+  "artifacts": [
+    {
+      "abi": "arm64-v8a",
+      "bytes": 56685681,
+      "sha256": "44d465b9fe77558a13ddb7d6c8596f8d8fd7cf446a9f7109e255e77f15b58171",
+      "file": "MXGE-Links-0.2.0-experimental-arm64-v8a.apk",
+      "status": "Signed local experimental build; phone validation pending"
+    },
+    {
+      "abi": "armeabi-v7a",
+      "bytes": 50032869,
+      "sha256": "f5ee4cc5b494ba00877627ccf728e610c7660234a20404fbc729035669703ab6",
+      "file": "MXGE-Links-0.2.0-experimental-armeabi-v7a.apk",
+      "status": "Signed local experimental build; phone validation pending"
+    }
+  ],
+  "sourceArtifacts": [
+    {
+      "file": "MXGE-Links-0.2.0-source.zip",
+      "bytes": 622527,
+      "sha256": "ac32cdbef5089ce05a32304d2045f76623b30c888083fd88d6473248770b7502"
+    }
+  ],
+  "certificateSha256": "bf5d3ac039976e63072e11a5ac13ea41a30dfc35c37fdc480688fb295ec6b4ca",
+  "hardwareTested": false,
+  "requiresInternet": true,
+  "requires4KiBPages": true
+}

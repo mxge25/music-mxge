@@ -1,5 +1,6 @@
 'use strict';
-const release = { published: false, tag: 'v1.0.0-beta.1' };
+const release = { published: false, tag: 'v1.0.0-beta.1-build.6' };
+const companionRelease = { published: false, tag: 'v1.0.0-beta.1-build.6' };
 let language = 'ar';
 let toastTimer;
 const languageButton = document.querySelector('#language');
@@ -24,12 +25,14 @@ function setLanguage(value) {
 }
 languageButton.addEventListener('click', () => setLanguage(language === 'ar' ? 'en' : 'ar'));
 document.querySelector('#release-status').hidden = release.published;
+document.querySelector('#companion-status').hidden = companionRelease.published;
 for (const link of document.querySelectorAll('[data-asset]')) {
-  if (!release.published) link.setAttribute('aria-disabled', 'true');
+  const available = link.dataset.release === 'companion' ? companionRelease.published : release.published;
+  if (!available) link.setAttribute('aria-disabled', 'true');
   link.addEventListener('click', event => {
-    if (!release.published) {
+    if (!available) {
       event.preventDefault();
-      notify('تحميل الإصدار لسه قيد التفعيل. لم يتم نشر ملف APK على GitHub بعد.', 'Downloads are not live yet. The APK has not been published on GitHub.');
+      notify('جارٍ التحقق من ملفات هذا التطبيق على GitHub. جرّب لاحقًا.', 'The app’s GitHub release files are being verified. Please try again later.');
     }
   });
 }
