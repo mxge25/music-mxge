@@ -1,5 +1,5 @@
 'use strict';
-const release = { published: false, tag: 'v1.0.0-beta.1-build.7' };
+const release = { published: false, tag: 'v1.0.0-beta.1-build.8' };
 const companionRelease = { published: false, tag: 'v1.0.0-beta.1-build.7' };
 let language = 'ar';
 let toastTimer;

@@ -1,19 +1,17 @@
-# MXGE Player build 7 + MXGE Links 0.3.0
+# MXGE Player build 8 — Library scrolling & visible themes
 
 Not yet verified on physical devices. The cutter is experimental.
 
-Experimental companion. Downloads from supported public links are not yet verified on physical devices.
+إصلاح أساسي: مسار تغليف APK كان يعيد استخدام كود Flutter قديم رغم تحديث الموارد واللوجو. تم تجاوز أداة NDK غير الفعالة، والتحقق أن كود التطبيق داخل نسختي APK يطابق الناتج الحالي للمترجم ويحتوي نصوص الإعدادات الجديدة وbuild 8. فحص التوقيع أو الحجم وحده لم يكن يكشف المشكلة.
 
-تحديث الواجهة: الثيم الكحلي والموف المعتمد، أيقونات أصلية دائرية، وإعدادات في خمس مجموعات. قائمة الثلاث شرط داخل المشغّل تضم السرعة والإبطاء والصوت، القص، تعديل بيانات الأغنية، التشغيل من البداية، سجل المواضع، مؤقت النوم، تكرار A–B، الكلمات والفصول والعلامات. تبقى حالة المؤقت/التكرار الفعالة ظاهرة في المشغّل. تعديل البيانات محلي داخل MXGE ولا يغيّر وسوم الملف الأصلي.
+شريط سحب جانبي ظاهر للمكتبة: اسحبه للطلوع والنزول في الأغاني والمجلدات والألبومات والفنانين وقوائم التشغيل. الأغنية الحالية مميزة بخلفية وعنوان بلون الثيم وعلامة صوت ثابتة، ويتغير التمييز مع الأغنية ويظل ظاهرًا أثناء الإيقاف المؤقت.
 
-MXGE Links 0.3.0: ابدأ بملف **universal.apk** الذي يضم ARM64 وARMv7 (99,951,146 bytes؛ أقل من 100 MB). نسخ أصغر متاحة بمعمارية محددة. لم يُحسم سبب رسالة App not installed على الهاتف؛ النسخة الشاملة تزيل اختيار المعمارية الخاطئة كسبب محتمل، ولا تُعتبر إثباتًا لنجاح التثبيت على كل جهاز. انتظر اكتمال تنزيل APK وافتحه من التنزيلات مع مساحة كافية لفك المحرك. ملف المصدر ZIP للمطورين.
+الثيمات الثلاثة ظاهرة مباشرة في أول الإعدادات: داكن، أسود AMOLED، ولون مخصص. مجموعات الإعدادات الخمس وإعدادات الحركة وأدوات الأغنية ما زالت متاحة. يظهر build 8 في الإعدادات للتأكد من النسخة المثبتة.
 
-Android 8+; Player base version code 7 (ARM64 2007 / ARMv7 1007), companion version code 3. Same application IDs and release certificate: install as updates while retaining local data. Player remains entirely offline with no INTERNET permission. Only the independent companion uses internet.
+Android 8+; same application ID and signing certificate. Base code 8: ARM64 2008 / ARMv7 1008. Install as an update; keep a local metadata backup. Entirely offline with no INTERNET permission. App source remains PRIVATE. No feature was removed for APK size.
 
-Companion supports selecting M4A audio or compatible MP4/H.264 video up to 720p from supported public YouTube, Instagram, TikTok and Facebook links. Keep its screen visible during downloading. Private, login-only, protected or changed services may fail. Current prebuilt runtime supports 4 KiB memory-page devices only; 16 KiB devices are rejected before native startup.
+Persistent draggable library scrollbars follow RTL/LTR. Current-track highlighting follows actual playback selection and remains while paused. Theme choices are directly accessible on the settings landing page, including custom accent controls.
 
-Validation: clean Flutter analysis; the existing suite was run, then all seven affected layout scenarios passed after fixes, with the other 54 tests already passing. Arabic/English, 360dp portrait, landscape and 2× text were checked with widget fixtures. Signed APK identities, Android permissions, notification icon resources and ZIP alignment verified. Companion APK payloads remain byte-for-byte unchanged through lossless recompression; no runtime shrinking. Each of the five signed APKs is strictly below 100,000,000 bytes. No connected physical phone was available: installation, platform downloads, audio/Bluetooth, notifications, cutter accuracy/memory and performance still require device tests.
+Validation: clean Flutter analysis. The existing 61-test suite ran; all scenarios have passing results after retesting the corrected offscreen layout fixture. Extended existing Arabic/English, portrait/landscape and 1x/2x layout fixtures verify dragging down/up through 120 tracks, changing current-track selection, paused selection and visible theme choices. These are automated widget checks with synthetic data, not phone tests. Installation, hardware audio, notifications, cutter output/memory and performance still need physical-device verification.
 
-The companion-only GPL application-source ZIP includes its original Kotlin/UI/build source, lockfile, Gradle wrapper, packaging scripts, license notices and upstream source directions. Player source stays PRIVATE and is excluded. Exact producing-build provenance for the pinned third-party prebuilt native runtime remains unresolved upstream; the archive is not claimed to reconstruct every native producing build. See its SOURCES.md before broader redistribution.
-
-Compare downloads against SHA256SUMS.txt. Older releases are retained.
+This release updates MXGE Player only. Existing MXGE Links releases/downloads remain available unchanged. Compare downloads with SHA256SUMS.txt.
