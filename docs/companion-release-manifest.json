@@ -1,44 +1,41 @@
 {
-  "app": "MXGE Links",
+  "app": "MXGE Loader",
   "applicationId": "io.github.mxge25.linkaudio",
-  "versionName": "0.3.0-experimental",
-  "releaseTag": "v1.0.0-beta.1-build.7",
+  "versionName": "0.4.0-beta.1",
+  "releaseTag": "mxge-loader-v0.4.0-beta.1",
   "minSdk": 26,
   "artifacts": [
     {
       "abi": "arm64-v8a",
-      "bytes": 56455272,
-      "sha256": "15adb693798e9c5c3b17c2f4619aeb796f21019f1d13d203bedb86704dd12d0d",
-      "file": "MXGE-Links-0.3.0-experimental-arm64-v8a.apk",
-      "status": "Signed local experimental build; phone validation pending"
+      "bytes": 56500439,
+      "sha256": "ae589f4567ff75009c6e2709923d95848262769f4d19a65c9dbca0b8985d7b8d",
+      "file": "MXGE-Loader-0.4.0-beta.1-arm64-v8a.apk"
     },
     {
       "abi": "armeabi-v7a",
-      "bytes": 49803380,
-      "sha256": "31b31a3d0d3e4dc266cece6cdb10e9e8cd65199274dbd6d4e3d708e95a0451d5",
-      "file": "MXGE-Links-0.3.0-experimental-armeabi-v7a.apk",
-      "status": "Signed local experimental build; phone validation pending"
+      "bytes": 49848547,
+      "sha256": "7120233ad6610cb7a900b68a88bfa7731cc3ac48cd320e1b52375713d17f3701",
+      "file": "MXGE-Loader-0.4.0-beta.1-armeabi-v7a.apk"
     },
     {
       "abi": "universal",
-      "bytes": 99951146,
-      "sha256": "8ccc92037db094f57b46c495ac7f8636fea94e2a4af48eadf17f6af981deb9ed",
-      "file": "MXGE-Links-0.3.0-experimental-universal.apk",
-      "status": "Signed local experimental build; phone validation pending"
+      "bytes": 99996313,
+      "sha256": "58672632ba26bac8363dd1408447f4028565e5ffc281f3cb6a5b202dfd33e4d6",
+      "file": "MXGE-Loader-0.4.0-beta.1-universal.apk"
     }
   ],
   "sourceArtifacts": [
     {
-      "file": "MXGE-Links-0.3.0-source.zip",
-      "bytes": 625847,
-      "sha256": "8c77ee4896570ab8a2068635a0301d6a079049e80ef1a3837ac41461f87f74a0"
+      "file": "MXGE-Loader-0.4.0-beta.1-source.zip",
+      "bytes": 656157,
+      "sha256": "ee553efc41143e72d9745201310855e26627fe437c24938539803700d16d4301"
     }
   ],
   "certificateSha256": "bf5d3ac039976e63072e11a5ac13ea41a30dfc35c37fdc480688fb295ec6b4ca",
   "hardwareTested": false,
   "requiresInternet": true,
   "requires4KiBPages": true,
-  "versionCode": 3,
+  "versionCode": 4,
   "maximumApkBytes": 100000000,
   "installationFailureReproduced": false
 }
