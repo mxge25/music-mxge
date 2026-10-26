@@ -1,5 +1,5 @@
 'use strict';
-const release = { published: false, tag: 'v1.0.0-beta.1-build.8' };
+const release = { published: false, tag: 'v1.0.0-beta.1-build.9' };
 const companionRelease = { published: false, tag: 'mxge-loader-v0.4.1-beta.1' };
 let language = 'ar';
 let toastTimer;
