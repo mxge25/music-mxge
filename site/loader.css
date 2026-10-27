@@ -1,0 +1,10 @@
+/* Original Loader identity, scoped to its own section. */
+#loader {--accent:#ff9364;--accent-soft:#163a40;color:#f5f5ec;border-top:1px solid #284e53;}
+#loader .links-heading img {filter:drop-shadow(0 10px 24px #0003);}
+#loader .eyebrow,#loader .text-link {color:#64e4ce;}
+#loader .button.primary {background:#ff9364;color:#071b20;border-color:#ff9364;}
+#loader .button.secondary {background:#0d2b31;border-color:#284e53;color:#f5f5ec;}
+#loader .beta-warning {border-color:#ff9364;background:#0d2b31;}
+#loader .beta-warning strong {color:#ffb18f;}
+#loader .pill {background:#0d2b31;border-color:#284e53;color:#64e4ce;}
+#loader .file-meta {color:#abc3c4;}

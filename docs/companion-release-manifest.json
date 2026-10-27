@@ -1,41 +1,41 @@
 {
   "app": "MXGE Loader",
   "applicationId": "io.github.mxge25.linkaudio",
-  "versionName": "0.4.1-beta.1",
-  "releaseTag": "mxge-loader-v0.4.1-beta.1",
+  "versionName": "0.5.0-beta.1",
+  "releaseTag": "mxge-loader-v0.5.0-beta.1",
   "minSdk": 26,
   "artifacts": [
     {
       "abi": "arm64-v8a",
-      "bytes": 56488633,
-      "sha256": "3421e80f9b4b4f9d8728a3c63cf733ccc3cadde8b233459a2c4621662f65aa80",
-      "file": "MXGE-Loader-0.4.1-beta.1-arm64-v8a.apk"
+      "bytes": 56497217,
+      "sha256": "09dac61c4f96233c2ca9506bebffa9f82977f5ab37c7069f4ebcddbb3a18cf44",
+      "file": "MXGE-Loader-0.5.0-beta.1-arm64-v8a.apk"
     },
     {
       "abi": "armeabi-v7a",
-      "bytes": 49836741,
-      "sha256": "28959eb8683b08582f52090ba5a1bb160f6f14c5ec7015657a757cee141a5d95",
-      "file": "MXGE-Loader-0.4.1-beta.1-armeabi-v7a.apk"
+      "bytes": 49845325,
+      "sha256": "659c8cbddb9573b32ae385bb9f1c1575760c027391a3af01a5c90263bb74a093",
+      "file": "MXGE-Loader-0.5.0-beta.1-armeabi-v7a.apk"
     },
     {
       "abi": "universal",
-      "bytes": 99984507,
-      "sha256": "2d7c58d44ba351e2b6a9364f9d7d73873a63a87f3f686b1d487c83d2f1eac69d",
-      "file": "MXGE-Loader-0.4.1-beta.1-universal.apk"
+      "bytes": 99993091,
+      "sha256": "bcae63467cb739d5da34411d22f90f9611fee7ee1f4c28b641e7a44eb39d6f0a",
+      "file": "MXGE-Loader-0.5.0-beta.1-universal.apk"
     }
   ],
   "sourceArtifacts": [
     {
-      "file": "MXGE-Loader-0.4.1-beta.1-source.zip",
-      "bytes": 3674005,
-      "sha256": "dba1025f3f5628c39cfed183942cbf417f2c0e26550e91ee613c2a3981be037b"
+      "file": "MXGE-Loader-0.5.0-beta.1-source.zip",
+      "bytes": 3680430,
+      "sha256": "6975a028bed6bc9497429451b57317b356701cbe63b8162692491448fc46858a"
     }
   ],
   "certificateSha256": "bf5d3ac039976e63072e11a5ac13ea41a30dfc35c37fdc480688fb295ec6b4ca",
   "hardwareTested": false,
   "requiresInternet": true,
   "requires4KiBPages": true,
-  "versionCode": 5,
+  "versionCode": 6,
   "maximumApkBytes": 100000000,
   "installationFailureReproduced": false
 }
