@@ -1,6 +1,6 @@
 'use strict';
 const release = { published: false, tag: 'v1.0.0-beta.1-build.9' };
-const companionRelease = { published: false, tag: 'mxge-loader-v0.6.0-beta.1' };
+const companionRelease = { published: false, tag: 'mxge-loader-v0.7.0-beta.1' };
 let language = 'ar';
 let toastTimer;
 const languageButton = document.querySelector('#language');
@@ -20,7 +20,7 @@ function setLanguage(value) {
   languageButton.textContent = value === 'ar' ? 'English ↗' : 'العربية ↗';
   languageButton.lang = value === 'ar' ? 'en' : 'ar';
   languageButton.setAttribute('aria-label', value === 'ar' ? 'Switch to English' : 'التبديل للعربية');
-  document.title = value === 'ar' ? 'MXGE Player — صوتك، على راحتك' : 'MXGE Player — Your audio. Your space.';
+  document.title = value === 'ar' ? 'MXGE — نزّل. احفظ. استمتع.' : 'MXGE — Find it. Keep it. Enjoy it.';
   toast.classList.remove('visible');
 }
 languageButton.addEventListener('click', () => setLanguage(language === 'ar' ? 'en' : 'ar'));

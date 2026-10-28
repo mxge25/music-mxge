@@ -1,46 +1,47 @@
 {
   "app": "MXGE Loader",
   "applicationId": "io.github.mxge25.linkaudio",
-  "versionName": "0.6.0-beta.1",
-  "releaseTag": "mxge-loader-v0.6.0-beta.1",
+  "versionName": "0.7.0-beta.1",
+  "releaseTag": "mxge-loader-v0.7.0-beta.1",
   "minSdk": 26,
   "artifacts": [
     {
       "abi": "arm64-v8a",
-      "bytes": 56505521,
-      "sha256": "dee5b72d9f50f4497e83adde2641a8d5a34b9105203e3a3d1bcf77676b944ac1",
-      "file": "MXGE-Loader-0.6.0-beta.1-arm64-v8a.apk"
+      "bytes": 56403513,
+      "sha256": "cd4e733763cf093b3a2d5a9439126da45093ec4a228aaf3e8023e50d2545aeab",
+      "file": "MXGE-Loader-0.7.0-beta.1-arm64-v8a.apk"
     },
     {
       "abi": "armeabi-v7a",
-      "bytes": 49857725,
-      "sha256": "70b0a622f67d50ec622db076f7eba8a04dd09cc0087addc18de54634e0e42bd6",
-      "file": "MXGE-Loader-0.6.0-beta.1-armeabi-v7a.apk"
+      "bytes": 49759813,
+      "sha256": "cabc2c0354b9577646e132048b8ceb9a71cffc5fcdc3d2ff16ab4056f840ba28",
+      "file": "MXGE-Loader-0.7.0-beta.1-armeabi-v7a.apk"
     },
     {
       "abi": "universal",
-      "bytes": 99989107,
-      "sha256": "5dce5d8de6b30f3f0c9263708f4efc60a303431d5002bf828f64f14f3648ca50",
-      "file": "MXGE-Loader-0.6.0-beta.1-universal.apk"
+      "bytes": 99891195,
+      "sha256": "3ff0a8fa8a351f02ccca5d1492d83e01d01f99c7509a643649982897d21f13c8",
+      "file": "MXGE-Loader-0.7.0-beta.1-universal.apk"
     }
   ],
   "sourceArtifacts": [
     {
-      "file": "MXGE-Loader-0.6.0-beta.1-source.zip",
-      "bytes": 3695664,
-      "sha256": "1eaa1bccfcce10c647d0cc424ad039bcf4411d539b02ad1b651b74ede3f1fca6"
+      "file": "MXGE-Loader-0.7.0-beta.1-source.zip",
+      "bytes": 3702603,
+      "sha256": "b99e007d99d77d1b2ae75c6b8acbde3a732eed0e3ce4120a862da4f29e8943a9"
     }
   ],
   "certificateSha256": "bf5d3ac039976e63072e11a5ac13ea41a30dfc35c37fdc480688fb295ec6b4ca",
   "hardwareTested": false,
   "requiresInternet": true,
   "requires4KiBPages": true,
-  "versionCode": 7,
+  "versionCode": 8,
   "maximumApkBytes": 100000000,
   "installationFailureReproduced": false,
   "storage": {
     "video": "Movies/MXGE Loader",
     "audio": "Music/MXGE Loader",
+    "photo": "Pictures/MXGE Loader",
     "legacyWriteMaxSdk": 28,
     "hardwareVerified": false
   }
