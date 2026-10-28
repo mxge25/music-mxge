@@ -1,58 +1,58 @@
 {
   "app": "MXGE Loader",
   "applicationId": "io.github.mxge25.linkaudio",
-  "versionName": "0.7.2-beta.1",
-  "releaseTag": "mxge-loader-v0.7.2-beta.1",
+  "versionName": "0.8.0-beta.1",
+  "versionCode": 11,
+  "releaseTag": "mxge-loader-v0.8.0-beta.1",
   "minSdk": 26,
   "artifacts": [
     {
       "abi": "arm64-v8a",
-      "bytes": 56411705,
-      "sha256": "7f6927a993123ee7e76aff8306dccb6a9d3e8afcc6107eba40ab7fcc336bdf5d",
-      "file": "MXGE-Loader-0.7.2-beta.1-arm64-v8a.apk"
+      "bytes": 56407609,
+      "sha256": "050c54b65f1632e1fafdce66f630808509d83c8c377313dd5784e4bf357e846a",
+      "file": "MXGE-Loader-0.8.0-beta.1-arm64-v8a.apk",
+      "status": "Signed local experimental build; phone validation pending",
+      "payloadMatchesFinalBuild": true
     },
     {
       "abi": "armeabi-v7a",
-      "bytes": 49763909,
-      "sha256": "d444c4f0a7e4c5a5b95c05108ec66df6e82043f3f7f59fd6b2f60873056da092",
-      "file": "MXGE-Loader-0.7.2-beta.1-armeabi-v7a.apk"
+      "bytes": 49759813,
+      "sha256": "39266f15f8b7f1c524063f33b5be61112fa0a5d9b494cdd0d6c90dc330ef8785",
+      "file": "MXGE-Loader-0.8.0-beta.1-armeabi-v7a.apk",
+      "status": "Signed local experimental build; phone validation pending",
+      "payloadMatchesFinalBuild": true
     },
     {
       "abi": "universal",
       "bytes": 99895291,
-      "sha256": "f25bd7c461ea054fbcb4e19b5401df3a83d794fa6b1d3f8ea7e2f2b1bb3074c6",
-      "file": "MXGE-Loader-0.7.2-beta.1-universal.apk"
+      "sha256": "1f1b5f5ca1da76634c84142baf8e9c437ee0c12fbad3a4347ece7c0c116114d8",
+      "file": "MXGE-Loader-0.8.0-beta.1-universal.apk",
+      "status": "Signed local experimental build; phone validation pending",
+      "payloadMatchesFinalBuild": true
     }
   ],
   "sourceArtifacts": [
     {
-      "file": "MXGE-Loader-0.7.2-beta.1-source.zip",
-      "bytes": 3707028,
-      "sha256": "bc50dafa95343de258d8e5ad725ed404a9058ff4382372d3fc5bece23ed5eaf0"
+      "file": "MXGE-Loader-0.8.0-beta.1-source.zip",
+      "bytes": 3704656,
+      "sha256": "2f2d1baf44a05705dcbb73b22e6f54b834e4daaf4c07f7663d175650630ba35d",
+      "entries": 77,
+      "kotlinFiles": 21,
+      "companionOnlyVerified": true
     }
   ],
   "certificateSha256": "bf5d3ac039976e63072e11a5ac13ea41a30dfc35c37fdc480688fb295ec6b4ca",
   "hardwareTested": false,
   "requiresInternet": true,
   "requires4KiBPages": true,
-  "versionCode": 10,
   "maximumApkBytes": 100000000,
-  "installationFailureReproduced": false,
+  "preferredDownloadAbi": "arm64-v8a",
+  "universalListedOnDownloadPage": false,
   "storage": {
-    "video": "Movies/MXGE Loader",
     "audio": "Music/MXGE Loader",
+    "video": "Movies/MXGE Loader",
     "photo": "Pictures/MXGE Loader",
     "legacyWriteMaxSdk": 28,
     "hardwareVerified": false
-  },
-  "preferredDownloadAbi": "arm64-v8a",
-  "universalListedOnDownloadPage": false,
-  "userInstallationReport": {
-    "date": "2026-10-28",
-    "device": "OPPO A92",
-    "android": "14 (user-reported)",
-    "smallerApk": "User reports it installs/works; exact small ABI not specified",
-    "universalApk": "User reports App not installed",
-    "cause": "Not reproduced locally; no installer error code or connected device"
   }
 }

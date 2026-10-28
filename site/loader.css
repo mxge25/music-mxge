@@ -1,3 +1,2 @@
-/* Original Loader identity. App-specific color remains distinct from Player. */
-#loader{--app-accent:#d4f56a;--app-tint:#232b19}
-#loader .app-identity p{color:#a6acff}
+/* Loader uses black, off-white and one copper detail. Original artwork and controls. */
+#loader .app-identity p{color:#ff9b70}
