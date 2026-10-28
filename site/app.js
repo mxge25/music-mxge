@@ -36,16 +36,3 @@ for (const link of document.querySelectorAll('[data-asset]')) {
     }
   });
 }
-for (const button of document.querySelectorAll('[data-copy]')) button.addEventListener('click', async () => {
-  const value = document.getElementById(button.dataset.copy).textContent.trim();
-  try {
-    await navigator.clipboard.writeText(value);
-    notify('تم نسخ بصمة SHA256.', 'SHA256 checksum copied.');
-  } catch (_) {
-    const range = document.createRange();
-    range.selectNodeContents(document.getElementById(button.dataset.copy));
-    const selection = window.getSelection();
-    selection.removeAllRanges(); selection.addRange(range);
-    notify('تم تحديد البصمة؛ انسخها يدويًا.', 'Checksum selected; copy it manually.');
-  }
-});

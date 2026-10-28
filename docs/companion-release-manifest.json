@@ -44,5 +44,15 @@
     "photo": "Pictures/MXGE Loader",
     "legacyWriteMaxSdk": 28,
     "hardwareVerified": false
+  },
+  "preferredDownloadAbi": "arm64-v8a",
+  "universalListedOnDownloadPage": false,
+  "userInstallationReport": {
+    "date": "2026-10-28",
+    "device": "OPPO A92",
+    "android": "14 (user-reported)",
+    "smallerApk": "User reports it installs/works; exact small ABI not specified",
+    "universalApk": "User reports App not installed",
+    "cause": "Not reproduced locally; no installer error code or connected device"
   }
 }
