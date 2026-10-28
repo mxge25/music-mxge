@@ -1,6 +1,6 @@
 'use strict';
-const release = { published: false, tag: 'v1.0.0-beta.1-build.9' };
-const companionRelease = { published: false, tag: 'mxge-loader-v0.7.0-beta.1' };
+const release = { published: false, tag: 'v1.0.0-beta.1-build.10' };
+const companionRelease = { published: false, tag: 'mxge-loader-v0.7.2-beta.1' };
 let language = 'ar';
 let toastTimer;
 const languageButton = document.querySelector('#language');
