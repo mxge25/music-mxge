@@ -6,4 +6,4 @@ Fresh public samples from Facebook Watch, X, Instagram and YouTube downloaded wi
 
 **Experimental companion. Downloads from supported public links are not yet verified on physical devices.**
 
-Same package/certificate; install over the existing app. ARM64 primary, ARMv7 alternative. Existing files/Player/prior releases unchanged. Current native runtime needs ARM/4KiB pages. Public binary publication pending tooling recovery; signed local artifacts and matching companion-only source/checksums are prepared.
+Same package/certificate; install over the existing app. ARM64 primary, ARMv7 alternative. Existing files/Player/prior releases unchanged. Current native runtime needs ARM/4KiB pages. Published with signed APKs and matching companion-only source/checksums. Browser upload recovered on 2026-10-28; the earlier publication block is resolved.
