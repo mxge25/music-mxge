@@ -1,6 +1,7 @@
 'use strict';
 const release = { published: false, tag: 'v1.0.0-beta.1-build.10' };
 const companionRelease = { published: false, tag: 'mxge-loader-v0.8.1-beta.1' };
+const scannerRelease = { published: false, tag: 'mxge-scanner-v0.1.0-beta.1' };
 let language = 'ar';
 let toastTimer;
 const languageButton = document.querySelector('#language');
@@ -26,8 +27,10 @@ function setLanguage(value) {
 languageButton.addEventListener('click', () => setLanguage(language === 'ar' ? 'en' : 'ar'));
 document.querySelector('#release-status').hidden = release.published;
 document.querySelector('#companion-status').hidden = companionRelease.published;
+document.querySelector('#scanner-status').hidden = scannerRelease.published;
+const releases = { player: release, companion: companionRelease, scanner: scannerRelease };
 for (const link of document.querySelectorAll('[data-asset]')) {
-  const available = link.dataset.release === 'companion' ? companionRelease.published : release.published;
+  const available = releases[link.dataset.release || 'player']?.published === true;
   if (!available) link.setAttribute('aria-disabled', 'true');
   link.addEventListener('click', event => {
     if (!available) {

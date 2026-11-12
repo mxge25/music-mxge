@@ -1,6 +1,6 @@
-# MXGE Player & MXGE Loader — downloads
+# MXGE Player, MXGE Loader & MXGE Scanner — downloads
 
-صفحة تحميل MXGE Player الأوفلاين، وMXGE Loader المستقل للبحث وتنزيل الصوت والفيديو من الروابط العامة المدعومة، بدون إعلانات داخل التطبيق.
+صفحة تحميل MXGE Player الأوفلاين، وMXGE Loader المستقل للبحث وتنزيل الصوت والفيديو من الروابط العامة المدعومة، وMXGE Scanner لمسح المستندات أوفلاين، بدون إعلانات داخل التطبيق.
 
 https://mxge25.github.io/music-mxge/
 
