@@ -1,25 +1,24 @@
 {
   "app": "MXGE Scanner",
   "applicationId": "io.github.mxge25.scanner",
-  "versionName": "0.1.0-beta.1",
-  "baseVersionCode": 1,
-  "releaseTag": "mxge-scanner-v0.1.0-beta.1",
+  "versionName": "0.2.0-beta.1",
+  "baseVersionCode": 2,
+  "releaseTag": "mxge-scanner-v0.2.0-beta.1",
   "minSdk": 24,
   "artifacts": [
     {
       "abi": "arm64-v8a",
-      "bytes": 209739753,
-      "sha256": "03ef4852236c97ffdeb0e153e56ab0a3e06357c6004d35ffc1bfea6ac4a2ca43",
-      "file": "MXGE-Scanner-0.1.0-beta.1-arm64-v8a.apk"
+      "bytes": 56295564,
+      "sha256": "0bb223258eeb43ce1ce43be0f966c869ef56b1f4b97df2fd99d5a8dbe5d5192e",
+      "file": "MXGE-Scanner-0.2.0-beta.1-arm64-v8a.apk"
     },
     {
       "abi": "armeabi-v7a",
-      "bytes": 186806025,
-      "sha256": "6cee73887232dbd260befc4414470456a3d876fe90af6379e2347b181690d4d2",
-      "file": "MXGE-Scanner-0.1.0-beta.1-armeabi-v7a.apk"
+      "bytes": 45011104,
+      "sha256": "790e772f127be35197db02730f21aca805cee167005fef2fa1c69482d6d3963c",
+      "file": "MXGE-Scanner-0.2.0-beta.1-armeabi-v7a.apk"
     }
   ],
   "certificateSha256": "48e39249003f37e0b2c1a056a9a923829a37dcf9ba17d62f2ba542926d27801b",
   "hardwareTested": false
 }
-

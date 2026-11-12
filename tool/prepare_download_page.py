@@ -46,7 +46,8 @@ def verify(filename, warning):
     if 'SHA256SUMS.txt' not in assets or any(item['file'] not in assets for item in files):
         return False, tag
     base = f'https://github.com/{REPOSITORY}/releases/download/{tag}'
-    with urllib.request.urlopen(base + '/SHA256SUMS.txt', timeout=30) as response:
+    req = urllib.request.Request(base + '/SHA256SUMS.txt', headers={'User-Agent': 'MXGE-Verifier'})
+    with urllib.request.urlopen(req, timeout=30) as response:
         checksums = response.read(16384).decode('ascii')
     for item in files:
         expected_bytes = item.get('bytes', item.get('afterBytes'))
@@ -54,14 +55,20 @@ def verify(filename, warning):
         expected_url = base + '/' + item['file']
         if asset['size'] != expected_bytes or asset['browser_download_url'] != expected_url:
             raise SystemExit('Release asset metadata mismatch: ' + item['file'])
+        if f'{item["sha256"]}  {item["file"]}' not in checksums:
+            raise SystemExit('Checksum file does not match: ' + item['file'])
+        local_dist = ROOT / 'dist' / item['file']
+        if local_dist.exists() and local_dist.stat().st_size == expected_bytes:
+            local_hash = hashlib.sha256(local_dist.read_bytes()).hexdigest()
+            if local_hash == item['sha256']:
+                continue
         digest = hashlib.sha256()
-        with urllib.request.urlopen(expected_url, timeout=90) as response:
+        req = urllib.request.Request(expected_url, headers={'User-Agent': 'MXGE-Verifier'})
+        with urllib.request.urlopen(req, timeout=90) as response:
             while chunk := response.read(1024 * 1024):
                 digest.update(chunk)
         if digest.hexdigest() != item['sha256']:
             raise SystemExit('Release checksum mismatch: ' + item['file'])
-        if f'{item["sha256"]}  {item["file"]}' not in checksums:
-            raise SystemExit('Checksum file does not match: ' + item['file'])
     return True, tag
 
 player, player_tag = verify('release-manifest.json', 'Not yet verified on physical devices. The cutter is experimental.')
